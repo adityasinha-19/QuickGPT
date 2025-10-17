@@ -42,7 +42,7 @@ export const textMessageController = async (req, res) => {
       isImage: false,
     };
 
-    res.json({ sucess: true, reply });
+    res.json({ success: true, reply });
 
     chat.messages.push(reply);
     await chat.save();
